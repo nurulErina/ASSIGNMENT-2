@@ -1,22 +1,29 @@
 
 package assignementskincare;
 
-public class CategorySkincare {
+public class CategorySkincare extends BrandsSkincare{
      
         String cleansing;
         String moisturing;
         String serum;
         String toner;
-    
+        private String place = "Place to buy skincare: Watson, Guardian, Farmasi";
 
-        public CategorySkincare(String cleansing, String moisturing, String serum, String toner){
-            this.cleansing = cleansing;
-            this.moisturing = moisturing;
-            this.serum = serum;
-            this.toner = toner;
-        }
+    CategorySkincare(String cleansing, String moisturing, String serum, String toner) {
+       this.cleansing = "w";
+       this.moisturing = "a";
+       this.serum = "s";
+       this.toner = "t";
 
-  
+    }
+
+   public void CategorySkincare(String cleansing, String moisturing, String serum, String toner) {
+        this.cleansing = "Safi,Simple,Loreal,Biore"; 
+        this.moisturing = "cream, gel";
+        this.serum = "dry, oily, combination";
+        this.toner = "Simple, Safi, Loreal, Biore";
+    }
+
         public void getcleansing(String cleansing){
             this.cleansing = cleansing;
         }
@@ -41,6 +48,14 @@ public class CategorySkincare {
         }
         public String gettoner(){
             return toner;
+        }
+        
+        public String getplace(){
+        return place;
+       }
+
+        public void sethowUsing(String myplaceBuy){
+        this.place = myplaceBuy;
         }
         @Override
         public String toString(){

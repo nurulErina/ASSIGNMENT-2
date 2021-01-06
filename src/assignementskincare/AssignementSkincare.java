@@ -15,6 +15,10 @@ public class AssignementSkincare {
         System.out.println("Third brand skincare Simple: "+b.getStringThree());
         System.out.println("Fourth brand skincare Himalaya: "+b.getStringFour());
         System.out.println("Fifth brand skincare Biore: "+b.getStringFive());
+        
+        System.out.println(b.getTypes());
+        System.out.println(b.getUsingSkincare());
+        System.out.println(c.getplace());
     }
     
 }
